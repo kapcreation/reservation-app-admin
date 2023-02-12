@@ -1,0 +1,45 @@
+.widget {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: var(--background);
+  box-shadow: var(--shadow);
+  border-radius: 10px;
+  min-height: 125px;
+
+  > .left, 
+  > .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    > .title {
+      color: var(--text);
+    }
+    > .counter {
+      font-size: 2rem;
+      color: var(--title);
+    }
+    > .link {
+      text-decoration: underline;
+      color: var(--secondary);
+      cursor: pointer;
+    }
+    > .percentage {
+      display: flex;
+      align-items: center;
+      font-size: 0.85rem;
+      color: var(--success);
+
+      &.negative {
+        color: var(--error);
+      }
+    }
+    > .icon {
+      padding: 5px;
+      background-color: lightgreen;
+      border-radius: 5px;
+      align-self: flex-end;
+    }
+  }
+}

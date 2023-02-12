@@ -1,0 +1,17 @@
+.chart {
+  box-shadow: var(--shadow);
+  padding: 10px;
+  border-radius: 10px;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  > .title {
+    color: var(--text);
+    margin-bottom: 10px;
+  }
+
+  .chart-grid {
+    stroke: var(--secondary);
+  }
+}

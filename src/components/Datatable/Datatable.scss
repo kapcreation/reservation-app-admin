@@ -1,0 +1,72 @@
+.datatable {
+  height: 600px;
+  padding: 20px;
+
+  > .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    color: var(--title);
+
+    > .btn {
+      color: var(--success);
+      border: 1px solid var(--success);
+      padding: 5px;
+      border-radius: 5px;
+    }
+  }
+  > .data-grid {
+    color: var(--text);
+  }
+
+  .cell-img {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    > img {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  }
+  .cell-status {
+    padding: 5px;
+    border-radius: 5px;
+
+    &.active {
+      background-color: rgba(0, 128, 0, 0.05);
+      color: var(--success);
+    }
+    &.pending {
+      background-color: rgba(255, 217, 0, 0.05);
+      color: var(--warning);
+    }
+    &.passive {
+      background-color: rgba(255, 0, 0, 0.05);
+      color: var(--error);
+    }
+  }
+  .cell-action {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    > button {
+      padding: 2px 5px;
+      border-radius: 5px;
+      background-color: transparent;
+
+      &:nth-child(1) {
+        color: var(--primary);
+        border: 1px solid var(--primary);
+      }
+      &:nth-child(2) {
+        color: var(--error);
+        border: 1px solid var(--error);
+      }
+    }
+  }
+}

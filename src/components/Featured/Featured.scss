@@ -1,0 +1,63 @@
+.featured {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--background);
+  box-shadow: var(--shadow);
+  border-radius: 10px;
+
+  > .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--text);
+  }
+  > .bottom {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+    > .featured-chart {
+      width: 200px;
+      height: 200px;
+    }
+    > .title {
+      font-weight: bold;
+      color: var(--text);
+    }
+    > .amount {
+      font-size: 2rem;
+      color: var(--title);
+    }
+    > .desc {
+      color: var(--text);
+      text-align: center ;
+    }
+    > .summary {
+      width: 100%;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+
+      > .item {
+        text-align: center;
+
+        > .title {
+          color: var(--text);
+          margin-bottom: 10px;
+        }
+        > .result {
+          display: flex;
+          align-items: center;
+          color: var(--success);
+
+          &.negative {
+            color: var(--error);
+          }
+        }
+      }
+    }
+  }
+}
