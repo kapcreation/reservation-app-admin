@@ -37,6 +37,11 @@ function App() {
               <Route path=":hotelId" element={<Single />} />
               <Route path="new" element={<New context="hotel" />} />
             </Route>
+            <Route path="rooms">
+              <Route index element={<List context="room" />} />
+              <Route path=":roomId" element={<Single />} />
+              <Route path="new" element={<New context="room" />} />
+            </Route>
           </Route>
           <Route path="/login" element={<Login />} />
         </Routes>

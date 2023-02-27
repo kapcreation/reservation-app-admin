@@ -21,7 +21,7 @@ const storage = getStorage();
 
 export async function uploadImage(file) {
   try {
-    const storageRef = ref(storage, `${uuidv4()}/${file.name}`);
+    const storageRef = ref(storage, `hotel-reservation/${uuidv4()}/${file.name}`);
     
     // 'file' comes from the Blob or File API
     await uploadBytes(storageRef, file)

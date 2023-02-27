@@ -14,7 +14,7 @@ export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(JSON.parse(localStorage.getItem("user")) || null)
 
   async function login(data) {
-    const res = await axios.post(`${process.env.REACT_APP_API_URL}/auth/login`, data)
+    const res = await axios.post(`${process.env.REACT_APP_API}/auth/login`, data)
     
     if (!res.data.isAdmin) throw new Error("Only admin can login!")
 

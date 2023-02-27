@@ -9,14 +9,14 @@ import axios from 'axios';
 import { userColumns, hotelColumns, roomColumns } from './columns';
 
 const Datatable = ({ context }) => {
-  const { data, setData, loading, error } = useFetch(`${process.env.REACT_APP_API_URL}/${context}s`)
+  const { data, setData, loading, error } = useFetch(`${process.env.REACT_APP_API}/${context}s`)
     
   const navigate = useNavigate()
 
   async function handleDelete(id) {
     try {
       setData(data.filter(item=>item._id !== id))
-      await axios.delete(`${process.env.REACT_APP_API_URL}/${context}s/${id}`)
+      await axios.delete(`${process.env.REACT_APP_API}/${context}s/${id}`)
     } catch (error) {
       console.error(error)
     }

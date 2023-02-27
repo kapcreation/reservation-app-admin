@@ -134,23 +134,39 @@ export const hotelInputs = [
 
 export const roomInputs = [
   {
+    name: "hotelId",
+    label: "Hotel id",
+    type: "text",
+    placeholder: "Enter Hotel id...",
+  },
+  {
+    name: "title",
     label: "Title",
     type: "text",
     placeholder: "Enter Title...",
   },
   {
+    name: "desc",
     label: "Description",
     type: "text",
     placeholder: "Enter Description...",
   },
   {
+    name: "price",
     label: "Price",
     type: "number",
     placeholder: "Enter Price...",
   },
   {
+    name: "maxPeople",
     label: "Max People",
     type: "number",
     placeholder: "Enter Max...",
+  },
+  {
+    name: "roomNumbers",
+    label: "Room Numbers",
+    type: "text",
+    placeholder: "1,2,3",
   },
 ];
